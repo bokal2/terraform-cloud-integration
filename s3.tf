@@ -8,6 +8,6 @@ resource "aws_s3_bucket" "demo_bucket" {
 
 resource "aws_s3_object" "name" {
   bucket = aws_s3_bucket.demo_bucket.id
-  source = "/demo_content.txt"
+  source = "demo_content.txt"
   key    = "demo_content.txt"
 }
